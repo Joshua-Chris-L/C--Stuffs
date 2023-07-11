@@ -74,24 +74,107 @@ using namespace std;
 // }
 
 
-int main(){
-    cout<<" Program Calculates the discounted price. Please Input Total Amount: ";
-    int totalAmount;
-    cin>> totalAmount;
+// int main(){
+//     cout<<" Program Calculates the discounted price. Please Input Total Amount: ";
+//     int totalAmount;
+//     cin>> totalAmount;
 
-    if (totalAmount < 100)
+//     if (totalAmount < 100)
+//     {
+//         cout<< totalAmount<<"\n";
+//     }else if (totalAmount >= 100 && totalAmount < 500)
+//     { 
+//         int discount;
+//         discount = totalAmount*0.1;
+//         cout<<totalAmount - discount << "\n";
+//     }else{
+//         int discount;
+//         discount = totalAmount*0.2;
+//         cout<< totalAmount - discount<<"\n";
+//     }
+
+//     return 0;
+// }
+
+// int main(){
+//     int n,r;
+//     cout<<"enter a number";
+//     cin>>n;
+
+//     while (n!=0)
+//     {
+//         r = n%10;
+//     }
+//     cout<<r;
+
+//     return;
+// }
+
+// int main(){
+
+//     int A[] = {2,3,4,8,9,10,19};
+
+//     // for (int i=0; i<6; i++)
+//     //     cout<<A[i]<<endl;
+    
+//     for(int x:A)
+//         cout<<x<<endl;
+//     return 0;
+// }
+
+// int main(){
+//     int A[7] = {-4,-5,-61,-7,-8,-9};
+//     int n = 7, sum = 0;
+
+//     // for(int i=0; i<7 ; i++){
+//     //     sum +=A[i];
+//     // }
+
+//     // cout<<"Sum is "<< sum <<endl;
+
+//     int max = A[0];
+//     for (int i = 0; i < 6; i++)
+//     {
+//        if (A[i] > max)
+//        {
+//           max = A[i];
+//        } 
+//     }
+    
+//     cout<<max<<endl;
+
+//     return 0;
+// }
+
+
+int main()
+{
+    for (int i = 1; i <=5; i++)
     {
-        cout<< totalAmount<<"\n";
-    }else if (totalAmount >= 100 && totalAmount < 500)
-    { 
-        int discount;
-        discount = totalAmount*0.1;
-        cout<<totalAmount - discount << "\n";
-    }else{
-        int discount;
-        discount = totalAmount*0.2;
-        cout<< totalAmount - discount<<"\n";
+        for (int j = 1; j <= 6-i; j++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
     }
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
