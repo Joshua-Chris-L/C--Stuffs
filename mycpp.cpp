@@ -147,19 +147,183 @@ using namespace std;
 // }
 
 
-int main()
-{
-    for (int i = 1; i <=5; i++)
-    {
-        for (int j = 1; j <= 6-i; j++)
-        {
-            cout<<"* ";
-        }
-        cout<<endl;
-    }
+// int main()
+// {
+//     for (int i = 1; i <=5; i++)
+//     {
+//         for (int j = 1; j <= 6-i; j++)
+//         {
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+// int main(){
+//     int A[2][3] = {{2,2,3}, {3,3,3} }; 
+//     int B[2][3] = {{1,1,1}, {2,2,2}};
+//     int C[2][3];
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             C[i][j] = A[i][j] + B[i][j];
+//         }
+//     }
+    
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             cout<<C[i][j]<<endl;
+//         }
+        
+//     }
+// }
+#include<cstring>
+
+int main(){
+
+    // char s1[100];
+    // char s2[100];
+
+    // cout<<"Enter your name ";
+    // cin.get(s1, 100);
+    // cout<<"Welcome"<<s1<<endl;
+
+    // cin.ignore();
+    // cout<<"Enter your name again";
+    // cin.get(s2, 100);
+    // cout<<"Welcomre"<<s2<<endl;
+
+    // char s3[100]= "235";
+    // char s4[100] = "54.78";
+
+    // long int x= strtol(s3, NULL, 10);
+    // float y= strtol(s4, NULL, 10);
+
+    // cout<<x<<endl<<y<<endl;
+
+    // char s1[20] = "x=10; y=20;z=35";
+    // char *token = strtok(s1, "=?");
+
+    // while (token!=NULL)
+    // {
+    //     cout<<token<<endl;
+    //     token=strtok(NULL,"=?");
+    // }
+
+    // string str;
+    // cout<<"Enter a string ";
+    // getline(cin, str);
+
+    // cout<<str<<endl;
+
+
+
+    // string s = "Welcome Joshua";
+    // char str[10];
+
+    // s.copy(str, 7);
+    // cout<<str<<endl;
+
+    // string str = "How are you doing";
+    // cout<<str.rfind("ow")<<endl;
+
+    // string str = " Hello World";
+    // cout<<str.find_last_of("l");
+
+    // string str1 = "hello";
+    // string str2 = "evening";
+
+    // cout<<str1.compare(str2);
+    // cout<<endl;
+
+    // string str = "Holiday";
+    // string str1 = "Hello";
+    // string str2 = " World";
+
+    // str[3] = 'M'; //reading into it
+
+    // cout<<str[4]<<endl; //writing into it
+    // cout<<str1 + str2<<endl;
+    
+    // string str ="today";
+
+    // for (int i = 0; str[i]!='\0'; i++)
+    // {
+    //     str[i] = str[i] - 32;
+    //     /* code */
+    // }
+    
+    // string::reverse_iterator it;
+
+    // for(it=str.rbegin(); it!=str.rend(); it++)
+    // {
+    //     cout<<*it;
+    // }
+
+    // cout<<str;
+    // cout<<endl;
+
+    // string str = "holiday";
+    // string rev = "";
+    // int len = str.length();
+    // rev.resize(len);
+
+    // for (int i = 0, j=len-1; i < len; i++, j--)
+    // {
+    //     rev[i] = str[j];
+    // }
+    
+    // if(str.compare(rev) ==0){
+    //     cout<<"The string is a Palindrone";
+    // }else{
+    //     cout<<"The string is not a Palindrone"<<endl;
+    // }
+
+    // functions
+    
+//    return 0;
+// }
+
+
+//using namespace std;
+
+// float add(float x, float y)
+//     {
+//         float z;
+//         z = x+y;
+
+//         return z;
+//     }
+
+// void main()
+//     {
+//         float x=2.3, y=7.9,z;
+//         z=add(x,y);
+
+//         return 0;
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
