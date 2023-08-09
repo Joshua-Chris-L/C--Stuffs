@@ -188,22 +188,173 @@ using namespace std;
 // }
 
 
-class Base{
-    public:
-        Base(){cout<<"Non-param base"<<endl;}
-        Base(int x){cout<<"Param of Base "<<x<<endl;}
-};
+// class Base{
+//     public:
+//         Base(){cout<<"Non-param base"<<endl;}
+//         Base(int x){cout<<"Param of Base "<<x<<endl;}
+// };
 
-class Derived:public Base
+// class Derived:public Base
+// {
+// public:
+//     Derived(){cout<<"Non-paaram Derived"<<endl;}
+//     Derived(int y){cout<<"Param of Derives"<<y<<endl;}
+// };
+
+// int main(){
+//     Derived d;
+// }
+
+// class Car
+// {
+//     public:
+//         virtual void start(){ cout<<"Car Started"<<endl;}
+// };
+// class Innova: public Car
+// {
+//     public: 
+//         void start(){cout<<"Innova Started"<<endl;}
+// };
+
+// class Swift: public Car
+// {
+//     public:
+//         void start(){cout<<"Swift car started"<<endl;}
+// };
+
+// int main()
+// {
+//     Car *p= new Innova();
+//     p->start();
+// }
+
+// class Test 
+// {
+//     public:
+//         int a;
+//         static int count;
+//     Test(){
+//         a=10;
+//         count++;
+//     }
+//     //ststaic methods only acess static variables.
+//     static int getCount(){
+//         return count;
+//     }
+// };
+// int Test::count=0;
+
+// int main()
+// {
+//     Test t1, t2;
+//     cout<<t1.count<<endl;
+//     cout<<t2.count<<endl;
+//     t1.count=25;
+//     cout<<t2.count<<endl;
+//     cout<<Test::count<<endl;
+// }
+
+// class MyException1: exception
+// {
+
+// };
+
+// class MyException2: MyException1
+// {
+
+// };
+
+// int main()
+// {
+//     try
+//     {
+//         throw MyException1();
+//     }
+//     catch (MyException1){
+        
+//     }
+//     catch(int e)
+//     {
+//         cout<<"Int Catch"<<endl;
+//     }
+//     catch(double e)
+//     {
+//         cout<<"Double Catch"<<endl;
+//     }
+//     catch(...)
+//     {
+//         cout<<"other catches"<<endl;
+//     }
+// }
+
+template<class T>
+class Stack
 {
-public:
-    Derived(){cout<<"Non-paaram Derived"<<endl;}
-    Derived(int y){cout<<"Param of Derives"<<y<<endl;}
+    private:
+        T *stk;
+        int top;
+        int size;
+    public:
+        Stack(int sz)
+        {
+            size=sz;
+            top=-1;
+            stk= new T[size];
+        }
+    void push(T x);
+    T pop();
 };
 
-int main(){
-    Derived d;
+template<class T>
+void Stack<T>::push(T x)
+{
+    if(top==size-1)
+        cout<<"Stack is Full";
+    else{
+        top++;
+        stk[top]=x;
+    }
 }
+
+template<class T>
+T Stack<T>::pop()
+{
+    T x=0;
+    if(top==-1){
+        cout<<"Stack is empty"<<endl;
+    }
+    else{
+        x=stk[top];
+        top--;
+    }
+    return x;
+}
+
+int main()
+{
+    Stack<float> s(10);
+    s.push(10);
+    s.push(23);
+    s.push(33);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
